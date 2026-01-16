@@ -241,10 +241,13 @@ position: absolute;
     background-color: #6415ff;
     color: #fff;
     cursor: pointer;
+    position: relative;
+    top: 66px;
+    width: 100%;
 }
 
 .header__customers--title {
-    margin-top: 48px;
+    margin-top: 80px;
     margin-bottom: 24px;
     font-size: 14px;
     font-weight: 500;
@@ -325,8 +328,10 @@ margin-top: 40px;
 .services {
     display: flex;
     flex-wrap: wrap;
- justify-content: center;
-    margin-top: 40px;
+    justify-content: center;
+    margin: 40px auto 0px;
+    max-width: 1200px;
+    width: 80%;
 }
 
 .service {
@@ -454,7 +459,7 @@ STEPS ↓
 
 .steps__description{
     padding: 32px 0;
-    padding-left: 64px;
+    padding-left: 12px;
 }
 
 .section__tag {
@@ -565,6 +570,10 @@ padding: 32px 64px 32px 0;
     margin-top: 12px;
 }
 
+.value{
+    margin: 4px;
+}
+
 /*
 
 PRICING ↓
@@ -606,7 +615,6 @@ PRICING ↓
     display: flex;
     position: relative;
     flex-direction: row;
-    width: 100%;
     justify-content: space-between;
 }
 
@@ -1189,13 +1197,12 @@ START / CALL TO ACTION ↓
 }
 
 .start__buttons {
-    display: flex;
     justify-content: flex-end;
     width: 50%;
 }
 
 .start__button--btn1{
-    padding: 20px 40px;
+    padding: 23px 40px;
     border-radius: 500px;
     font-weight: 700;
     font-size: 16px;
@@ -1204,7 +1211,7 @@ START / CALL TO ACTION ↓
     color: #f7fafc;
     line-height: 1.5;
     letter-spacing: 0.025;
-    margin: 1px;
+    margin: 15px;
     z-index: 2;
     cursor: pointer;
 }
@@ -1387,6 +1394,10 @@ MOBILE RESPONSIVENESS ↓
 
 @media (max-width: 1024px) {
 
+    .nav__links {
+        display: none;
+    }
+
     .btn__menu {
         display: block;
     }
@@ -1412,7 +1423,12 @@ MOBILE RESPONSIVENESS ↓
     #pricing .row {
         margin-top: 40px;
     }
+    .services {
+    display: block;
+    }
+    
 }
+
 
 @media(max-width: 640px) {
     .container {
@@ -1422,6 +1438,13 @@ MOBILE RESPONSIVENESS ↓
         margin: 8px 0;
         padding-bottom: 4px;
     }
+    .header__description{
+        width: 80%;
+    }
+    .plans{
+        display: block;
+    }
+
     main {
         margin-bottom: 80px;
     }
