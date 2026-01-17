@@ -386,9 +386,28 @@ width: 50%;
 .quality__img--wrapper {
     border-radius: 4px;
     border: 1px solid rgb(229, 231, 235);
-    position:relative;
-    margin-left: 0 56px;
+    position: relative;
+    margin: 0 56px;
     z-index: 2;
+    display: flex;
+}
+
+.quality__img{
+    z-index: 1;
+}
+
+.quality__grid {
+    transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    fill: rgb(100, 21, 255);
+    --tw-text-opacity: 1;
+    color: rgba(100, 21, 255, var(--tw-text-opacity));
+    z-index: 0;
+    display: block;
 }
 
 .quality__tag{
@@ -1427,6 +1446,10 @@ MOBILE RESPONSIVENESS ↓
     display: block;
     }
     
+    .plans{
+        display: block;
+    }
+
 }
 
 
@@ -1445,7 +1468,15 @@ MOBILE RESPONSIVENESS ↓
         display: block;
     }
 
+    .values__list{
+        display: block;
+    }
+
     main {
         margin-bottom: 80px;
+    }
+
+    .footer__bottom {
+        display: block;
     }
 }
